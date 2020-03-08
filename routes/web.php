@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::resource('products', 'ProductController');
+
+// Route::get('/product/index', 'ProductController@index')->name("product.index");
